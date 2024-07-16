@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.hero__section{
+    background: url(./images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.navbar__right_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.navbar__right_container .user_icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: none;
+}
+
+.zomato_image_text_container{
+    /* background-color: black; */
+    width: 100vw;
+    height: 45vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.zomato_image_text_container .hero__section_logo{
+    height: 5rem;
+}
+
+.zomato_image_text_container h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.hero__section_input_container{
+    display: flex;
+    justify-content: flex-start;
+    height: 3rem;
+    width: 50rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: .3rem;
+}
+
+.hero__section_input_container input{
+    background-color: transparent;
+    border: none;
+}
+
+.input__section_enter_container, .input__section_location_container{
+    display: flex;
+    align-items: center;
+}
+
+.input__section_location_container{
+    /* background-color: black; */
+    padding: .5rem;
+    width: 15rem;
+    gap: .5rem;
+}
+
+.input__section_enter_container{
+    padding: .5rem;
+    width: 25rem;
+    justify-content: space-between;
+}
+
+.input__section_enter_container .enter_text{
+    width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    .hero__section{
+        min-height: 80vh;
+    }
+    .navbar__right_container .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+}
