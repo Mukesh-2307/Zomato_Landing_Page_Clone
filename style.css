@@ -18,14 +18,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    height: 65px;
+    padding: 2rem 10rem;
 }
 
 .navbar__right_container{
     display: flex;
-    justify-content: space-evenly;
+    gap: 50px;
     align-items: center;
-    width: 40%;
+}
+
+.get_app_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.get_app_container a, .navbar__right_container a{
+    font-weight: 300;
 }
 
 .navbar__right_container .user_icon{
@@ -39,8 +49,8 @@
     display: none;
 }
 
-.zomato_image_text_container{
-    /* background-color: black; */
+/* my code */
+/* .zomato_image_text_container{
     width: 100vw;
     height: 45vh;
     padding: 1rem;
@@ -48,21 +58,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+} */
+
+/* devtown instructor's code */
+.zomato_image_text_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(60vh - 65px); 
 }
 
-.zomato_image_text_container .hero__section_logo{
+/* .zomato_image_text_container .hero__section_logo{
     height: 5rem;
-}
+} */
 
 .zomato_image_text_container h1{
-    font-weight: 400;
-    font-size: 2.5rem;
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+
+.hero__section_logo{
+    width: 250px;
+    height: auto;
 }
 
 .hero__section_input_container{
     display: flex;
     justify-content: flex-start;
-    height: 3rem;
+    height: 3.5rem;
     width: 50rem;
     background-color: white;
     border-radius: 10px;
@@ -74,22 +99,34 @@
     border: none;
 }
 
-.input__section_enter_container, .input__section_location_container{
+.input__section_location_container, .input__section_enter_container{
     display: flex;
     align-items: center;
 }
 
+.input__section_location_container input{
+    width: 130px;
+    margin-right: 25px;
+    margin-left: 5px
+}
+
+/* .input__section_location_container .fa-location-dot{
+    height: 25px;
+    width: 25px;
+} */
+
 .input__section_location_container{
-    /* background-color: black; */
     padding: .5rem;
-    width: 15rem;
+    width: 30%;
     gap: .5rem;
+    border-right: 2px solid #e0e0e0;
 }
 
 .input__section_enter_container{
-    padding: .5rem;
-    width: 25rem;
-    justify-content: space-between;
+    padding: .5rem .5rem .5rem 1rem;
+    width: 70%;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .input__section_enter_container .enter_text{
@@ -105,5 +142,24 @@
     }
     .link{
         display: none;
+    }
+    .zomato_image_text_container{
+        flex-direction: column;
+        width: 100%;
+        height: calc(80vh - 40px);
+    }
+    .input__section_location_container,.input__section_enter_container{
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+    }
+    .zomato_image_text_container h1{
+        font-size: 18px;
+    }
+    .hero__section_input_container{
+        width: 80%;
+    }
+    .input__section_location_container, .input__section_enter_container{
+        padding: .5rem;
     }
 }
