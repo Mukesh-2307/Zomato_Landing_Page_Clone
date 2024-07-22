@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
 
@@ -20,6 +20,7 @@
     justify-content: space-between;
     height: 65px;
     padding: 2rem 10rem;
+    color: white;
 }
 
 .navbar__right_container{
@@ -68,6 +69,7 @@
     flex-direction: column;
     gap: 20px;
     height: calc(60vh - 65px); 
+    color: white;
 }
 
 /* .zomato_image_text_container .hero__section_logo{
@@ -131,6 +133,45 @@
 
 .input__section_enter_container .enter_text{
     width: 80%;
+}
+
+.card__container{
+    margin: 3rem auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.we_offer_card{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all .5s ease;
+}
+
+.we_offer_card:hover{
+    background-color: rgba(128, 128, 128, 0.05);
+    transform: scale(1.05);
+}
+
+.we_offer_content{
+    padding: .5rem;
+}
+
+.we_offer_content h2{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.we_offer_card img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 190px;
 }
 
 @media screen and (max-width: 600px) {
