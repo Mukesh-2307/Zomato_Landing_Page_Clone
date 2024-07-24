@@ -1,53 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    /* color: white; */
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* color: white; */
+  text-decoration: none;
 }
 
-.hero__section{
-    background: url(./images/heroSectionBackground.png);
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+.hero__section {
+  background: url(./images/heroSectionBackground.png);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 65px;
-    padding: 2rem 10rem;
-    color: white;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 2rem 10rem;
+  color: white;
 }
 
-.navbar__right_container{
-    display: flex;
-    gap: 50px;
-    align-items: center;
+.navbar__right_container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
-.get_app_container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.get_app_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.get_app_container a, .navbar__right_container a{
-    font-weight: 300;
+.get_app_container a,
+.navbar__right_container a {
+  font-weight: 300;
 }
 
-.navbar__right_container .user_icon{
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    border-radius: 50%;
-    display: none;
+.navbar__right_container .user_icon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: none;
 }
 
 /* my code */
@@ -62,54 +63,55 @@
 } */
 
 /* devtown instructor's code */
-.zomato_image_text_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    height: calc(60vh - 65px); 
-    color: white;
+.zomato_image_text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(60vh - 65px);
+  color: white;
 }
 
 /* .zomato_image_text_container .hero__section_logo{
     height: 5rem;
 } */
 
-.zomato_image_text_container h1{
-    font-weight: 300;
-    font-size: 2.3rem;
+.zomato_image_text_container h1 {
+  font-weight: 300;
+  font-size: 2.3rem;
 }
 
-.hero__section_logo{
-    width: 250px;
-    height: auto;
+.hero__section_logo {
+  width: 250px;
+  height: auto;
 }
 
-.hero__section_input_container{
-    display: flex;
-    justify-content: flex-start;
-    height: 3.5rem;
-    width: 50rem;
-    background-color: white;
-    border-radius: 10px;
-    padding: .3rem;
+.hero__section_input_container {
+  display: flex;
+  justify-content: flex-start;
+  height: 3.5rem;
+  width: 50rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.3rem;
 }
 
-.hero__section_input_container input{
-    background-color: transparent;
-    border: none;
+.hero__section_input_container input {
+  background-color: transparent;
+  border: none;
 }
 
-.input__section_location_container, .input__section_enter_container{
-    display: flex;
-    align-items: center;
+.input__section_location_container,
+.input__section_enter_container {
+  display: flex;
+  align-items: center;
 }
 
-.input__section_location_container input{
-    width: 130px;
-    margin-right: 25px;
-    margin-left: 5px
+.input__section_location_container input {
+  width: 130px;
+  margin-right: 25px;
+  margin-left: 5px;
 }
 
 /* .input__section_location_container .fa-location-dot{
@@ -117,90 +119,290 @@
     width: 25px;
 } */
 
-.input__section_location_container{
-    padding: .5rem;
-    width: 30%;
-    gap: .5rem;
-    border-right: 2px solid #e0e0e0;
+.input__section_location_container {
+  padding: 0.5rem;
+  width: 30%;
+  gap: 0.5rem;
+  border-right: 2px solid #e0e0e0;
 }
 
-.input__section_enter_container{
-    padding: .5rem .5rem .5rem 1rem;
-    width: 70%;
-    justify-content: flex-start;
-    gap: 10px;
+.input__section_enter_container {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  width: 70%;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
-.input__section_enter_container .enter_text{
-    width: 80%;
+.input__section_enter_container .enter_text {
+  width: 80%;
 }
 
-.card__container{
-    margin: 3rem auto;
-    width: 90%;
+.card__container {
+  margin: 3rem auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.we_offer_card {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.5s ease;
+}
+
+.we_offer_card:hover {
+  background-color: rgba(128, 128, 128, 0.05);
+  transform: scale(1.05);
+}
+
+.we_offer_content {
+  padding: 0.5rem;
+}
+
+.we_offer_content h2 {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.we_offer_card img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 190px;
+}
+
+.collection__container {
+  margin: 3rem auto;
+  width: 85%;
+}
+
+.collection__container h1 {
+  font-weight: 600;
+}
+
+.collection__container .subheading_container {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.subheading_container span:nth-child(2) {
+  color: #ff7e8b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.collection_card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+  gap: 0.5rem;
+}
+
+.collection_card_container .card {
+  height: 300px;
+  min-width: 240px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card1 {
+  background-image: url(./images/collection1.jpg);
+}
+
+.card2 {
+  background-image: url(./images/collection2.jpg);
+}
+
+.card3 {
+  background-image: url(./images/collection3.jpg);
+}
+
+.card4 {
+  background-image: url(./images/collection4.jpg);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px;
+  
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, .75) 0%,
+    rgba(0, 0, 0, .02) 81%
+  );
+  z-index: 1;
+
+}
+
+.collection_card_container .card .card_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 12px 16px;
+  font-size: .9rem;
+  z-index: 6;
+}
+
+.collection_card_container .card .card_content h4{
+    font-weight: 600;
+}
+
+.get_the_app__container{
+    background-color: rgb(255,251,247);
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 3rem 6rem;
+}
+
+.get_the_app__container .semi_container{
+    /* margin: 3rem auto; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.get_the_app__container .semi_container .left{
+    flex: 2;
+}
+
+.get_the_app__container .semi_container .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get_the_app__container .semi_container .right{
+    flex: 3;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.right p{
+    font-size: .8rem;
+}
+
+.right .radio_btn_container{
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
-
-.we_offer_card{
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #e0e0e0;
-    transition: all .5s ease;
+.right .radio_btn_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.we_offer_card:hover{
-    background-color: rgba(128, 128, 128, 0.05);
-    transform: scale(1.05);
+.right .radio_btn_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
 }
 
-.we_offer_content{
-    padding: .5rem;
+.right .input_container{
+    display: flex;
+    gap: 0.5rem;
 }
 
-.we_offer_content h2{
-    font-size: larger;
-    font-weight: 700;
+.input_container button,.input_container input{
+    padding: 10px 12px;
 }
 
-.we_offer_card img{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 190px;
+.input_container input{
+    flex: auto;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input_container button{
+    border: none;
+    background-color: #ff7e8b;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.download_app__container h5{
+    font-weight: 600;
+    font-size: 15px;
+    color: grey;
+}
+
+.download_app_img_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.download_app_img_container a img{
+    height: auto;
+    width: 200px;
 }
 
 @media screen and (max-width: 600px) {
-    .hero__section{
-        min-height: 80vh;
-    }
-    .navbar__right_container .user_icon{
-        display: flex;
-    }
-    .link{
-        display: none;
-    }
-    .zomato_image_text_container{
-        flex-direction: column;
-        width: 100%;
-        height: calc(80vh - 40px);
-    }
-    .input__section_location_container,.input__section_enter_container{
-        padding: 18px;
-        border-radius: 10px;
-        width: 98%;
-    }
-    .zomato_image_text_container h1{
-        font-size: 18px;
-    }
-    .hero__section_input_container{
-        width: 80%;
-    }
-    .input__section_location_container, .input__section_enter_container{
-        padding: .5rem;
-    }
+  .hero__section {
+    min-height: 80vh;
+  }
+  .navbar__right_container .user_icon {
+    display: flex;
+  }
+  .link {
+    display: none;
+  }
+  .zomato_image_text_container {
+    flex-direction: column;
+    width: 100%;
+    height: calc(80vh - 40px);
+  }
+  .input__section_location_container,
+  .input__section_enter_container {
+    padding: 18px;
+    border-radius: 10px;
+    width: 98%;
+  }
+  .zomato_image_text_container h1 {
+    font-size: 18px;
+  }
+  .hero__section_input_container {
+    width: 80%;
+  }
+  .input__section_location_container,
+  .input__section_enter_container {
+    padding: 0.5rem;
+  }
 }
