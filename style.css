@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  /* color: white; */
   text-decoration: none;
 }
+
+/* 1st section hero section container */
 
 .hero__section {
   background: url(./images/heroSectionBackground.png);
@@ -137,6 +138,8 @@
   width: 80%;
 }
 
+/* 2nd section cards container */
+
 .card__container {
   margin: 3rem auto;
   width: 90%;
@@ -176,6 +179,8 @@
   width: 100%;
   height: 190px;
 }
+
+/* 3th section collection container */
 
 .collection__container {
   margin: 3rem auto;
@@ -267,6 +272,8 @@
     font-weight: 600;
 }
 
+/* 4th section get the app container */
+
 .get_the_app__container{
     background-color: rgb(255,251,247);
     width: 100%;
@@ -277,7 +284,6 @@
 }
 
 .get_the_app__container .semi_container{
-    /* margin: 3rem auto; */
     width: 60%;
     display: flex;
     justify-content: center;
@@ -364,7 +370,6 @@
 
 .download_app_img_container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -374,9 +379,50 @@
     width: 200px;
 }
 
-@media screen and (max-width: 600px) {
+/* 5th section get the app container */
+
+.accordion__container{
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.accordion__container h1{
+  font-weight: 600;
+}
+
+.accordion_card_container .accordion_card{
+  margin: 1rem 0;
+  border: 1px solid grey;
+  padding: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2.5px;
+}
+
+@media screen and (max-width: 1300px) {
+  .get_the_app__container .semi_container .left, .get_the_app__container .semi_container .right{
+    flex: 1;
+  }
+  
+  .get_the_app__container .semi_container{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .get_the_app__container{
+    padding: 2rem 1rem;
+  }
+  .get_the_app__container .semi_container{
+    width: 95%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
   .hero__section {
-    min-height: 80vh;
+    max-height: 45vh;
   }
   .navbar__right_container .user_icon {
     display: flex;
@@ -387,7 +433,7 @@
   .zomato_image_text_container {
     flex-direction: column;
     width: 100%;
-    height: calc(80vh - 40px);
+    height: calc(45vh - 40px);
   }
   .input__section_location_container,
   .input__section_enter_container {
