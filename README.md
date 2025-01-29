@@ -24,7 +24,7 @@ This is a responsive landing page clone of Zomato, built using HTML, CSS, and Ja
 3. Open `index.html` in a browser to view the landing page.
 
 ## Preview
-You can check out the live preview of the project [https://mukesh-2307.github.io/Zomato_Landing_Page_Clone/](#)
+You can check out the live preview of the project [here] https://mukesh-2307.github.io/Zomato_Landing_Page_Clone/
 
 ## Contributions
 Feel free to fork this repository and submit pull requests for improvements!
